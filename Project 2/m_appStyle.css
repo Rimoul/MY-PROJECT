@@ -10,9 +10,8 @@ html,body{
 }
 
 body{
-    background: url("/Images/Pencils.jpg");
+    background: url("Pencils.jpg");
     background-size: cover;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
