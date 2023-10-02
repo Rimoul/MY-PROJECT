@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: boder-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: url("/Images/Pencils.jpg");
+    background-size: cover;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: cursive;
+}
+
+#myform{
+    background: black;
+    width: 300px;
+    height: 170px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 12px;
+    color: #0fd9ff;
+}
+
+#score{
+    display: flex;
+    justify-content: right;
+    align-items: top;
+    margin: 0px 10px 30px 0px;
+}
+
+#takeit{
+    background: green;
+    color: white;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#answer{
+    margin-top: 10px;
+    font-size: 17px;
+    text-align: center;
+}
