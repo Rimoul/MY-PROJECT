@@ -1,4 +1,5 @@
 const myformEl = document.getElementById("myform");                  
+
 const scoreEl = document.getElementById("score");                  
 const questionEl = document.getElementById("question");
 const answerEl = document.getElementById("answer");
