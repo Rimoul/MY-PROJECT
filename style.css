@@ -14,6 +14,7 @@ html,body{
 body{
     background: url("https://t4.ftcdn.net/jpg/05/57/08/33/240_F_557083387_i4zwxJNVLZsCFzYLubwfYoiI5YjBQk4Y.jpg");
     background-size: cover;
+    background-position: 10%;
     background-attachment: fixed;
     overflow-x: hidden;
 }
