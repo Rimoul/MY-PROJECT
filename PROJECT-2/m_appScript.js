@@ -18,6 +18,7 @@ scoreEl.innerText= `Score: ${score}`;
 myformEl.addEventListener("submit",()=>{
     const check=+answerEl.value;
     if(rightans==check){score++;}
+    else if(check=="r" || check=="reset" || check=="restart"){score==0}
     else{
         if(score!=0){score--;}
         else{score==0;}
