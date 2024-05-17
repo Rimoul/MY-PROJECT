@@ -1,0 +1,110 @@
+
+.upBox{
+  h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-family: arial;
+
+    font-weight: 10;
+  }
+  color: white;
+ 
+}
+
+.dayDatew{
+  box-shadow: 1px 5px 25px 3px #444;
+  background-color: #151728;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px 10px 1px 10px;
+  height: 60px;
+  font-size: 40px;
+}
+
+.leftDayDateBox{
+  background-color: blue;
+}
+
+
+
+.tempBoxer{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;  
+}
+
+.tempBoxerLeft{
+  box-shadow: 1px 5px 25px 3px #444;
+  background-color: #151728;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 10;
+}
+
+
+.tempBoxCenter{
+  display: flex;
+  align-items: center;
+}
+
+#mainTemperature{
+  font-size: 5.5em; 
+  line-height: 0.7;
+}
+
+
+a{
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+a:hover, a:active, a:focus{
+  color: white;
+  text-decoration: none;
+  opacity: 1;
+}
+
+.tempBoxRight{
+  box-shadow: 1px 5px 25px 3px #444;
+  background-color: #151728;
+  border-radius: 5px;
+  font-size: 22px;
+  font-weight: bolder;
+  
+  
+  width: 250px;
+}
+
+.tempBoxRight div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px;
+  height: 35px;
+  padding: 0px 25px 0px 25px;
+
+}
+
+.leftAndCenter{
+  box-shadow: 1px 5px 25px 3px #444;
+  background-color: #151728;
+  border-radius: 5px;
+  width: 65%;
+  padding-left: 20px;
+}
+
+
+.weather-icon{
+  width: 100px;
+  height: 100px;
+  margin: 0px 5px 10px 4px;
+}
+
+
+
+.locss{
+  padding: 13px 0px 30px 0px;
+}

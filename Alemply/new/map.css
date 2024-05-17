@@ -1,0 +1,21 @@
+
+#map-container {
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content from rounded corners */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2); /* Add inset box shadow */
+}
+#map {
+    height: 250px; /* Adjust map height */
+    width: 100%; /* Full width */
+}
+.zoom-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+}

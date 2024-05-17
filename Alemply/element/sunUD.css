@@ -1,0 +1,43 @@
+body{
+    background-color: black;
+}
+
+.riseSet h3 {
+    font-weight: 100;
+    margin: 0;
+}
+
+g {
+    transition: transform 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+
+.riseSet {
+    text-align: center;
+    display: inline-block;
+    padding: 25px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px 0px #515050;
+    color: wheat;
+    display: flex;
+    max-width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: #151728;
+
+}
+
+
+.sunRise{
+    border-right: 1px white solid ;
+    padding-right: 50px;
+}
+
+
+.riseSet-icon{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}

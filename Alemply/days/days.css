@@ -1,0 +1,67 @@
+
+
+
+.allDays{
+    body{
+        background-color: black;
+        color: white;
+        font-family: arial;
+        
+    }
+    display: flex;
+    justify-content: space-evenly;
+    text-transform: uppercase;
+    font-size: 12px;
+    h1,h2,h3,h5,h6{
+    font-weight: 10;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    
+    }
+}
+
+.allDays .day{
+    background-color: black;
+    margin: 1px;
+    max-width: 108px;
+    height: 230px;
+    text-align: center; 
+    
+}
+
+
+.allDays .dayDiv{
+    margin: 5px 0px 25px 0px;
+}
+
+.maxMIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.maxMIn div{
+    margin: 0px 15px 0px 15px;
+
+}
+
+.dayDetail div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.forcatIcon{
+    width: 30px;
+    height: 30px;
+}
+
+.daysDate{
+    font-weight: lighter;
+    font-size: 8px;
+}
+
+

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="std.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="map.css">
+  </head>
+  <body>
+
+   <div class="video-bg">
+    <video width="320" height="240" autoplay loop muted>
+     <source src="https://assets.codepen.io/3364143/7btrrd.mp4" type="video/mp4">
+   Your browser does not support the video tag.
+   </video>
+   </div>
+   <div class="dark-light">
+       <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" /></svg>
+      </div>
+   <div class="app">
+  
+      <!-- HEADER -->
+      <header class="block">
+        <ul class="header-menu horizontal-list">
+          <li>
+            <a class="header-menu-tab" href="#1"><span class="icon entypo-cog scnd-font-color"></span>Home</a>
+          </li>
+          <li>
+            <a class="header-menu-tab" href="#2"><span class="icon fontawesome-user scnd-font-color"></span>About</a>
+          </li>
+          <li>
+            <a class="header-menu-tab" href="#3"><span class="icon fontawesome-envelope scnd-font-color"></span>Features</a>
+            <a class="header-menu-number" href="#4">5</a>
+          </li>
+          <li>
+            <a class="header-menu-tab" href="#5"><span class="icon fontawesome-star-empty scnd-font-color"></span>Cities</a>
+          </li>
+        </ul>
+        <div class="profile-menu">
+          <p>Me <a href="#26"><span class="entypo-down-open scnd-font-color"></span></a></p>
+          <a href="#">
+            <div class="profile-picture small-profile-picture">
+              <img width="40px" alt="Anne Hathaway picture" src="data:image/png;base64,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">
+            </div>
+          </a>
+        </div>
+      </header>
+      
+
+      <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient">
+                <div class="date-container">
+                    <h2 class="date-dayname" id="weekday">Tuesday</h2>
+                    <span class="date-day" id="theDate">15 Jan 2019</span>
+                    <i class="location-icon" data-feather="map-pin"></i>
+                    <span class="location" id="theLoc">Paris, FR</span>
+                </div>
+                <div class="weather-container">
+                    <i class="weather-icon" data-feather="sun"></i>
+                    <h1 class="weather-temp" id="livTemp">29°C</h1>
+                    <h3 class="weather-desc">Sunny</h3>
+                </div>
+            </div>
+        </div>
+        <div class="info-side">
+            <div class="today-info-container">
+                <div class="today-info">
+                    <div class="precipitation">
+                        <span class="title">PRECIPITATION</span>
+                        <span class="value" id="preci">0 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="humidity">
+                        <span class="title">HUMIDITY</span>
+                        <span class="value" id="humi">34 %</span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="wind">
+                        <span class="title">WIND</span>
+                        <span class="value" id="windy">0 km/h</span>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="week-container">
+                <ul class="week-list">
+                    <li class="active">
+                        <i class="day-icon" data-feather="sun"></i>
+                        <span class="day-name" id="nextDay1">Tue</span>
+                        <span class="day-temp" id="nextDayTemp1">29°C</span>
+                    </li>
+                    <li>
+                        <i class="day-icon" data-feather="cloud"></i>
+                        <span class="day-name" id="nextDay2">Wed</span>
+                        <span class="day-temp" id="nextDayTemp2">21°C</span>
+                    </li>
+                    <li>
+                        <i class="day-icon" data-feather="cloud-snow"></i>
+                        <span class="day-name" id="nextDay3">Thu</span>
+                        <span class="day-temp" id="nextDayTemp3">08°C</span>
+                    </li>
+                    <li>
+                        <i class="day-icon" data-feather="cloud-rain"></i>
+                        <span class="day-name" id="nextDay4">Fry</span>
+                        <span class="day-temp" id="nextDayTemp4">19°C</span>
+                    </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            <div class="location-container">
+                <button class="location-button">
+                    <i data-feather="map-pin"></i>
+                    <a href="../page2/hopeitpossible.html">
+                      <span> See More</span>  
+                    </a>
+                </button>
+            </div>
+        </div>
+      </div>
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="hola.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="forcast1.js"></script>
+  </body>
+</html>
